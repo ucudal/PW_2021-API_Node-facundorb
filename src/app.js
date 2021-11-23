@@ -49,17 +49,17 @@ app.get('/experiencia-laboral', function(req, res) {
 
 
 app.post('/enviar-formulario', jsonParser, function(req, res) {
-  const nombreContact = req.body.nombreContact;
-  if (!nombreContact) {
-    return res.status(400).send("Error: No sea ha ingresado un nombre de contacto");
+  const nombreContacto = req.body.nombreContact;
+  if (!nombreContacto) {
+    return res.status(400).send("Falta el nombre de contacto");
   }
-  res.cookie("PW_2021-CV_Contacto", nombreContact);
-  res.send("Envìo del formulario exitoso");
+  res.cookie("PW_2021-CV_Contacto", nombreContacto);
+  res.send("Se completó la operación con éxito");
 });
 
 
 app.post("/*", jsonParser, function(req, res) {
-  res.status(404).send("404 - Lo sentimos, la página solicitada no fue encontrada");
+  res.status(404).send("404 - No fue encontrado");
 }); 
 
 app.listen(process.env.PORT || 3000, (a) => {
