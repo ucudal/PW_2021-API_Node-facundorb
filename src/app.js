@@ -22,7 +22,7 @@ app.get('/hola-mundo', function(req, res) {
 
 const respuesta = JSON.stringify({"experiencia-laboral": [{"empresa": "Integra CCS",
 "puesto": "Proyect Manager",
-"descripcion": "• Panificación, ejecución y validación de requerimientos de la plataforma.• Capacitación al cliente sobre el producto y/o nuevos requerimientos.• Relevamiento de tareas y seguimiento a miembros del equipo.• Elaboración de documentos de Alcance y documentación del proceso• Capacitación interna del departamento","fechaInicio": "07/01/2019",
+"descripcion": " Panificación, ejecución y validación de requerimientos de la plataforma, así como también al cliente. Relevamiento de tareas y seguimiento a miembros del equipo de implementación. Elaboración de documentos de Alcance y documentación del proceso. Capacitación interna del departamento","fechaInicio": "07/01/2019",
 "fechaFin": "Actualidad"
 },
 {
