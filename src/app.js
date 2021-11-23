@@ -42,7 +42,7 @@ app.get('/experiencia-laboral', function(req, res) {
 
 
 app.post('/enviar-formulario', jsonParser, function(req, res) {
-  const nombreContacto = req.body.nombreContact;
+  const nombreContacto = req.body.nombreContacto;
   if (!nombreContacto) {
     return res.status(400).send("Falta el nombre de contacto");
   }
